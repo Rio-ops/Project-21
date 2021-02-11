@@ -19,7 +19,7 @@ function setup() {
 }
 
 function draw() {
-  background(255,255,255);  
+  background(0);  
 
   if(hasCollided(bullet,wall))
   {
@@ -39,7 +39,7 @@ function draw() {
   drawSprites();
 }
 
-function hasCollided(_Lbullet,_Lwall)
+function hasCollided(lbullet,lwall)
 {
        bulletRightEdge=lbullet.x +lbullet.width;
        wallLeftEdge=lwall.x;
